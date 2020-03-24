@@ -9,3 +9,4 @@ rng.getint(int left = 0, int right = 100); //获得[left, right) 范围内的随
                                            //当right - left 比较小时可认为是均匀分布
 rng.getdouble(double left = 0.0, double right = 1.0); // 获得[left, right]范围内的随机实数
                                                       //[left, right]范围不能太大
+```
