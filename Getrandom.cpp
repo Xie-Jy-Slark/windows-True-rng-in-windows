@@ -1,7 +1,7 @@
 #include "Getrandom.h"
 
 Getrandom::Getrandom() {
-  LPCWSTR UserName(L"MyKeyContainer");
+  LPCSTR UserName("MyKeyContainer");
   if (CryptAcquireContext(&Rnd, UserName, NULL, PROV_RSA_FULL, 0)) available = true;
   else {
     if (GetLastError() == NTE_BAD_KEYSET) {
